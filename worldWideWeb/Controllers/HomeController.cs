@@ -13,5 +13,22 @@ namespace worldWideWeb.Controllers
         {
             return View();
         }
+        public ActionResult MyStats()
+        {
+            return View();
+        }
+        public ActionResult Resume()
+        {
+            return View();
+        }
+        public ActionResult Contact()
+        {
+            return View();
+        }
+        public ActionResult SocialLinks()
+        {
+            return View();
+        }
+
     }
 }
