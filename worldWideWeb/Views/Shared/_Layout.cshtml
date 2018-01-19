@@ -11,16 +11,17 @@
 <body>
     <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="~/Views/Home/Index.cshtml">internetSite</a>
+            <a class="navbar-brand" href="@Url.Action("Index","Home")">internetSite</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="~/Views/Home/Index.cshtml">Home <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="#">About Me</a>
-                    <a class="nav-item nav-link" href="#">Links and Such</a>
-                    <a class="nav-item nav-link" href="#">Other</a>
+                    <a class="nav-item nav-link active" href="@Url.Action("Index","Home")">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="@Url.Action("MyStats","Home")">My Stats</a>
+                    <a class="nav-item nav-link" href="@Url.Action("SocialLinks","Home")">Links and Such</a>
+                    <a class="nav-item nav-link" href="@Url.Action("Resume","Home")">Resume</a>
+                    <a class="nav-item nav-link" href="@Url.Action("Contact","Home")">Contact</a>
                 </div>
             </div>
         </nav>
