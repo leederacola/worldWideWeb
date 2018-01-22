@@ -16,3 +16,19 @@ textarea {
     max-width: 280px;
 }
 
+.card {
+    box-shadow: 4px 8px 16px 4px rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 8px 16px 32px 8px rgba(0,0,0,0.5);
+}
+.row{
+    padding-top: 16px;
+    padding-bottom: 32px;
+}
+
+
+
+

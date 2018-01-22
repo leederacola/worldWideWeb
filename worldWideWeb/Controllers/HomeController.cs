@@ -30,5 +30,12 @@ namespace worldWideWeb.Controllers
             return View();
         }
 
+        public ViewResult trialSpace()
+        {
+            return View();
+        }
+
+
+
     }
 }
