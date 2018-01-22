@@ -103,7 +103,7 @@
     <Content Include="img\640_480_peeps.jpg" />
     <Content Include="img\640_480_people.jpg" />
     <Content Include="img\640_480_tech.jpg" />
-    <Content Include="Scripts\black.js" />
+    <Content Include="Scripts\app.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
