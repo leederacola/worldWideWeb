@@ -8,11 +8,12 @@ namespace worldWideWeb.Controllers
 {
     public class HomeController : Controller
     {
-        // GET: Home
+        
         public ActionResult Index()
         {
             return View();
         }
+        
         public ActionResult MyStats()
         {
             return View();
@@ -30,7 +31,12 @@ namespace worldWideWeb.Controllers
             return View();
         }
 
-        public ViewResult trialSpace()
+        public ViewResult TrialSpace()
+        {
+            return View();
+        }
+
+        public ViewResult Error404()
         {
             return View();
         }
