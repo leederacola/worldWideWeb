@@ -2,65 +2,64 @@
 @{
     ViewBag.Title = "Resume";
 }
-<div class="container-fluid">
-        
-    
+<div class="container"> 
     <div class="row">
         <div class="col">
             <h1><a href="~/downloads/Resume.pdf">Download PDF here!</a></h1>
             <hr />
         </div>
     </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <h2>My Quick Resume </h2>
+                <button type="button" class="btn btn-secondary" id="expandBtn">Expand All</button>
+                <hr />
+                <h3 id="info">Personal Info/Statement</h3>
+                <div class="container" id="infoExpand">
+                    <p>Tryin to get hired, put my talents to use, will make you a happy employer</p>
+                    <ul class="list-group">
+                        <li class="list-group-item">Ryan Madden</li>
+                        <li class="list-group-item">1313 Pretty Street</li>
+                        <li class="list-group-item">Urban City, State</li>
+                        <li class="list-group-item">(area code) d-i-g-i-t-s</li>
+                    </ul>
+                </div>
+                <hr />
 
-    <div class="row">
-        <div class="col">
-            <h2>My Quick Resume </h2>
-            <button type="button" class="btn btn-secondary" id="expandBtn">Expand All</button>
-            <hr />
-            <h3 id="info">Personal Info/Statement</h3>
-            <div id="infoExpand">
-                <p>Tryin to get hired, put my talents to use, will make you a happy employer</p>
-                <ul class="list-group">
-                    <li class="list-group-item">Ryan Madden</li>
-                    <li class="list-group-item">1313 Pretty Street</li>
-                    <li class="list-group-item">Urban City, State</li>
-                    <li class="list-group-item">(area code) d-i-g-i-t-s</li>
-                </ul>
-            </div>
-            <hr />
+                <h3 id="edu">Education</h3>
+                <div class="container" id="eduExpand">
+                    <ul class="list-group">
+                        <li class="list-group-item">Bachelors of Science, UNiversity of Lousiville (2014)</li>
+                        <li class="list-group-item">Currently pursueing CS degree </li>
+                        <li class="list-group-item">IUS </li>
+                    </ul>
+                </div>
+                <hr />
 
-            <h3 id="edu">Education</h3>
-            <div id="eduExpand">
-                <ul class="list-group">
-                    <li class="list-group-item">Bachelors of Science, UNiversity of Lousiville (2014)</li>
-                    <li class="list-group-item">Currently pursueing CS degree </li>
-                    <li class="list-group-item">IUS </li>
-                </ul>
-            </div>
-            <hr />
+                <h3 id="exp">Expirence</h3>
+                <div class="container" id="expExpand">
+                    <ul class="list-group">
+                        <li class="list-group-item">Intern ZirMed (2018)</li>
+                        <li class="list-group-item">Thats all so far....</li>
+                    </ul>
+                </div>
+                <hr />
 
-            <h3 id="exp">Expirence</h3>
-            <div id="expExpand">
-                <ul class="list-group">
-                    <li class="list-group-item">Intern ZirMed (2018)</li>
-                    <li class="list-group-item">Thats all so far....</li>
-                </ul>
-            </div>
-            <hr />
+                <h3 id="other">Other</h3>
+                <div class="container" id="otherExpand">
+                    <ul class="list-group">
+                        <li class="list-group-item">c#</li>
+                        <li class="list-group-item"> dot net / mvc</li>
+                        <l1 class="list-group-item">some sql</l1>
+                        <li class="list-group-item"> some Html/Css</li>
+                        <li class="list-group-item">some javascript</li>
+                        <li class="list-group-item"> angular and typescript SOON!</li>
 
-            <h3 id="other">Other</h3>
-            <div id="otherExpand">
-                <ul class="list-group">
-                    <li class="list-group-item">c#</li>
-                    <li class="list-group-item"> dot net / mvc</li>
-                    <l1 class="list-group-item">some sql</l1>
-                    <li class="list-group-item"> some Html/Css</li>
-                    <li class="list-group-item">some javascript</li>
-                    <li class="list-group-item"> angular and typescript SOON!</li>
-
-                </ul>
+                    </ul>
+                </div>
             </div>
         </div>
-       </div>
+    </div>
     </div>
     

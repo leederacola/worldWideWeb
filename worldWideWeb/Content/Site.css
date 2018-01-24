@@ -36,24 +36,15 @@ textarea {
 .card-columns{
     padding: 12px 12px 12px 12px;
 }
-
 .list-group-item{
     padding:initial;
 }
 
 #footer{
-    backface-visibility:visible;
     position:fixed;
     bottom:0;
     z-index:1;
-
-    
+    right:0;
 }
-.navbar{
-    top:0;
-}
-
-
-
 
 
