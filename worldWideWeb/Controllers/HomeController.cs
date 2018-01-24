@@ -31,7 +31,7 @@ namespace worldWideWeb.Controllers
             return View();
         }
 
-        public ViewResult TrialSpace()
+        public ActionResult TrialSpace()
         {
             return View();
         }

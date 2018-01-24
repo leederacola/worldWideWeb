@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Ryan Internet Page</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
     <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+
+
+
     <link href="~/Content/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <script src="~/Scripts/modernizr-2.6.2.js"></script>
 </head>
 <body>
     <div class="container-fluid">
         <nav class="navbar navbar-dark bg-dark">
-            <a class="navbar-brand" href="@Url.Action("Index","Home")">RYAN MADDEN</a>
+            <a class="navbar-brand" href="@Url.Action("Index","Home")">R Y A N - M A D D E N</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -31,11 +35,15 @@
         @RenderBody()
         <hr />
 
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Ryan</p>
-            <i class="far fa-github fa-lg"></i>
-            <i class="far fa-linkedin-square fa-lg"></i>
-        </footer>
+        <div class="container-fluid">
+            <footer class="alert-dark" id="footer">
+
+                <p>&copy; @DateTime.Now.Year - Ryan</p>
+                <i class="far fa-github fa-lg"></i>
+                <i class="far fa-linkedin-square fa-lg"></i>
+
+            </footer>
+        </div>
 
     </div>
 
