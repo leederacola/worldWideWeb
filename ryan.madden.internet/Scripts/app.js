@@ -56,9 +56,11 @@ $("#404 > .yes").click(function () {
     //letter = "x";
     letter = this.innerText;
     letter = letter.substring(0, 1);
-    guess = guess + letter;
-    
+    guess = guess + letter;  
     console.log("guess = " + guess);
+    if (guess == altAnswer || guess == answer) {
+        alert("we did it!");
+    }
 
 })   
 
