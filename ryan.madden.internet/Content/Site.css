@@ -2,6 +2,7 @@
     font-family: "Inconsolata";
     padding-top: 50px;
     padding-bottom: 20px;
+    
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -46,7 +47,9 @@ textarea {
     z-index:1;
     right:0;
 }
-#titleCard{
-    
+#yes:hover {
+    box-shadow: 8px 16px 32px 8px rgb(0, 255, 33);
 }
-
+#no:hover {
+    box-shadow: 8px 16px 32px 8px rgb(255, 0, 0);
+}

@@ -24,3 +24,4 @@ $("#expandBtn").click(function () {
     $("#expExpand").slideToggle(1000);
     $("#otherExpand").slideToggle(1000);
 })
+
