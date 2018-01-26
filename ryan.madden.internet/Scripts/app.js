@@ -25,3 +25,40 @@ $("#expandBtn").click(function () {
     $("#otherExpand").slideToggle(1000);
 })
 
+/**
+
+var answer = "IEHOVA";
+var altAnswer = "RYAN";
+var guess = "";     <h3 id="name">The Name of God is: (user answer built here)</h3>
+user clicks card
+on click
+    if card id = yes
+        card h1 inner text is added to string guess
+        if (guess === answer || guess === altAnswer)
+            return home
+   else
+        sean connery dies
+        reload 404
+--------------------------------------------
+<div class="card"id="yes">
+        <div class="card-body text-center">
+            <h1>I</h1>
+        </div>
+---------------------------------------------
+*/
+// select cards on 404
+var answer = "IEHOVA";
+var altAnswer = "RYAN";
+var guess = ""; //  <h3 id="name">The Name of God is: (user answer built here)</h3>
+
+$("#404 > .yes").click(function () {      
+    var letter = "";
+    //letter = "x";
+    letter = this.innerText;
+    letter = letter.substring(0, 1);
+    guess = guess + letter;
+    
+    console.log("guess = " + guess);
+
+})   
+
