@@ -170,8 +170,12 @@
     <Content Include="img\GitHub_Logo_White.png" />
     <Content Include="img\keyboard.jpg" />
     <Content Include="img\man.jpg" />
+    <Content Include="img\nameOfGod.jpg" />
+    <Content Include="img\poor.jpg" />
+    <Content Include="img\poorlyGif.gif" />
     <Content Include="img\resume.jpg" />
     <Content Include="img\swim.jpg" />
+    <Content Include="img\theCup.jpg" />
     <Content Include="img\videogame.jpg" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

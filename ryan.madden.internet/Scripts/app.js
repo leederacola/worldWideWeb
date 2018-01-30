@@ -1,7 +1,10 @@
-﻿$("#infoExpand").hide();
+﻿
+//........................resume....................................
+$("#infoExpand").hide();
 $("#eduExpand").hide();
 $("#expExpand").hide();
 $("#otherExpand").hide();
+
 
 // got to be more efficent way for this............other than function for every element
 $("#info").click(function () {
@@ -25,42 +28,44 @@ $("#expandBtn").click(function () {
     $("#otherExpand").slideToggle(1000);
 })
 
-/**
 
-var answer = "IEHOVA";
-var altAnswer = "RYAN";
-var guess = "";     <h3 id="name">The Name of God is: (user answer built here)</h3>
-user clicks card
-on click
-    if card id = yes
-        card h1 inner text is added to string guess
-        if (guess === answer || guess === altAnswer)
-            return home
-   else
-        sean connery dies
-        reload 404
---------------------------------------------
-<div class="card"id="yes">
-        <div class="card-body text-center">
-            <h1>I</h1>
-        </div>
----------------------------------------------
-*/
-// select cards on 404
+
+//...............404.........................
+
+
 var answer = "IEHOVA";
 var altAnswer = "RYAN";
 var guess = ""; //  <h3 id="name">The Name of God is: (user answer built here)</h3>
 
-$("#404 > .yes").click(function () {      
-    var letter = "";
-    //letter = "x";
-    letter = this.innerText;
-    letter = letter.substring(0, 1);
-    guess = guess + letter;  
-    console.log("guess = " + guess);
-    if (guess == altAnswer || guess == answer) {
-        alert("we did it!");
-    }
+$("#pathPic").hide();
+$("#footSteps").hide();
+$("#name").hide();
+$("#404").hide();
 
-})   
+$("#fail").hide();
+$("#pass").hide();
+
+$(document).ready(function ()
+{
+    $("#pathPic").slideDown(5000);
+    $("#footSteps").fadeIn(10000);
+    $("#name").fadeIn(10000);
+    $("#404").fadeIn(10000);    
+});
+
+
+$("#404 > .yes").click(function () {
+        var letter = "";
+        letter = this.innerText;
+        letter = letter.substring(0, 1);
+        guess = guess + letter;
+        
+
+        console.log("guess = " + guess);
+        if (guess == altAnswer || guess == answer) {
+            $("#puzzle").fadeOut(1000);
+            $("#pass").fadeIn(5000);
+            guess = "";
+        }
+    });   
 
