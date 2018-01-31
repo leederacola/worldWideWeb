@@ -168,7 +168,10 @@
     <Content Include="img\controller.png" />
     <Content Include="img\git.gif" />
     <Content Include="img\GitHub_Logo_White.png" />
+    <Content Include="img\git_good.png" />
     <Content Include="img\keyboard.jpg" />
+    <Content Include="img\linkedingood.png" />
+    <Content Include="img\link_good.png" />
     <Content Include="img\man.jpg" />
     <Content Include="img\nameOfGod.jpg" />
     <Content Include="img\poor.jpg" />
@@ -255,6 +258,8 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\Shared\footer.cshtml" />
+    <Content Include="Views\Shared\Header.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
