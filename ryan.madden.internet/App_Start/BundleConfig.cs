@@ -12,11 +12,7 @@ namespace ryan.madden.internet
             bundles.UseCdn = true;
             var jQueryCdnPath = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js";
             var bootStrapCdnPath = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css";
-            
-            /** Default jQuery 
-            bundles.Add(new ScriptBundle("~/bundles/jquery").Include("~/Scripts/jquery-{version}.js"));
-            **/
-
+         
             //  overloaded jQ bundle with cdn path
             bundles.Add(new ScriptBundle("~/bundles/jQuery", jQueryCdnPath).Include(
                 "~/Scripts/jQuery-{version}.js"));
@@ -29,18 +25,18 @@ namespace ryan.madden.internet
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
-            /**     Deafualt Bootstrap
-             * 
-            bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include( "~/Scripts/bootstrap.js","~/Scripts/respond.js"));
-            */
-
             // overloaded BS4 with cdn path
             bundles.Add(new ScriptBundle("~/bundles/bootstrap", bootStrapCdnPath).Include(
                 "~/Scripts/bootstrap.js",
                 "~/Scripts/respond.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/custonJS").Include("~/Scrips/app.js"));
+
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+
 
             // this guy needs to be true to min and bundle
             // it overrides the webConfig <compilation debug="true"/>

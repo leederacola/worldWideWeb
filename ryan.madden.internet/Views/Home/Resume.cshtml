@@ -2,71 +2,76 @@
 @{
     ViewBag.Title = "Resume";
 }
-<div class="container"> 
+<div class="container">
+    <h2><a href="~/downloads/Resume.pdf" onclick="ga('send', 'event', 'resume', 'click', 1);" target="_blank">Download PDF Resume</a></h2>
+</div>
+
+<hr />
+<div class="container">
+    <a href="#">
+        <h3 id="info">Personal Info/Statement</h3>
+    </a>
+    <div id="infoExpand" class="resumeToggle">
+        <p>Seeking entry level software development position.</p>
+        <div class="card">
+            <ul class="list-group">
+                <li class="list-group-item">Ryan Madden</li>
+                <li class="list-group-item">Street no. Street Name</li>
+                <li class="list-group-item">City Name, State</li>
+                <li class="list-group-item">(area code) ***-****</li>
+            </ul>
+        </div>
+    </div>
+    <hr />
+    <a href="#">
+        <h3 id="edu">Education</h3>
+    </a>
+    <div id="eduExpand" class="resumeToggle">
+        <div class="card">
+            <ul class="list-group">
+                <li class="list-group-item">Bachelors of Science, UNiversity of Lousiville (2014)</li>
+                <li class="list-group-item">Currently pursueing CS degree </li>
+                <li class="list-group-item">IUS </li>
+            </ul>
+        </div>
+    </div>
+    <hr />
+    <a href="#">
+        <h3 id="exp">Expirence</h3>
+    </a>
+    <div id="expExpand" class="resumeToggle">
+        <div class="card">
+            <ul class="list-group">
+                <li class="list-group-item">Intern ZirMed (2018)</li>
+                <li class="list-group-item">Thats all so far....</li>
+            </ul>
+        </div>
+    </div>
+    <hr />
+    <a href="#">
+        <h3 id="other">Other</h3>
+    </a>
+    <div id="otherExpand" class="resumeToggle">
+        <div class="card">
+            <ul class="list-group">
+                <li class="list-group-item">c#</li>
+                <li class="list-group-item"> dot net / mvc</li>
+                <l1 class="list-group-item">some sql</l1>
+                <li class="list-group-item"> some Html/Css</li>
+                <li class="list-group-item">some javascript</li>
+                <li class="list-group-item"> angular and typescript SOON!</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--
+    <div class="container">
     <div class="row">
-        <div class="col">
-            <h2><a href="~/downloads/Resume.pdf" onclick="ga('send', 'event', 'resume', 'click', 1);" target="_blank">Download PDF here!</a></h2>
-            <hr />
+        <div class="col-3">
+            <h3>Dropdown Resume</h3>
+        </div>
+        <div class="col-1">
+            <button type="button" class="btn btn-secondary" id="expandBtn">Toggle All</button>
         </div>
     </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col">
-                <h2>My Quick Resume </h2>
-                <button type="button" class="btn btn-secondary" id="expandBtn">Expand All</button>
-                <hr />
-                <h3 id="info">Personal Info/Statement</h3>
-                <div class="container" id="infoExpand">
-                    <p>Tryin to get hired, put my talents to use, will make you a happy employer</p>
-                    <div class="card">
-                        <ul class="list-group">
-                            <li class="list-group-item">Ryan Madden</li>
-                            <li class="list-group-item">1313 Pretty Street</li>
-                            <li class="list-group-item">Urban City, State</li>
-                            <li class="list-group-item">(area code) d-i-g-i-t-s</li>
-                        </ul>
-                    </div>
-                </div>
-                <hr />
-
-                <h3 id="edu">Education</h3>
-                <div class="container" id="eduExpand">
-                    <div class="card">
-                    <ul class="list-group">
-                        <li class="list-group-item">Bachelors of Science, UNiversity of Lousiville (2014)</li>
-                        <li class="list-group-item">Currently pursueing CS degree </li>
-                        <li class="list-group-item">IUS </li>
-                    </ul>
-                </div>
-                    </div>
-                <hr />
-
-                <h3 id="exp">Expirence</h3>
-                <div class="container" id="expExpand">
-                    <div class="card">
-                        <ul class="list-group">
-                            <li class="list-group-item">Intern ZirMed (2018)</li>
-                            <li class="list-group-item">Thats all so far....</li>
-                        </ul>
-                    </div>
-                </div>
-                <hr />
-
-                <h3 id="other">Other</h3>
-                <div class="container" id="otherExpand">
-                    <div class="card">
-                        <ul class="list-group">
-                            <li class="list-group-item">c#</li>
-                            <li class="list-group-item"> dot net / mvc</li>
-                            <l1 class="list-group-item">some sql</l1>
-                            <li class="list-group-item"> some Html/Css</li>
-                            <li class="list-group-item">some javascript</li>
-                            <li class="list-group-item"> angular and typescript SOON!</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    
+-->

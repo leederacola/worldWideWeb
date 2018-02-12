@@ -168,9 +168,12 @@
     <Content Include="img\controller.png" />
     <Content Include="img\git.gif" />
     <Content Include="img\GitHub_Logo_White.png" />
+    <Content Include="img\git_560.png" />
     <Content Include="img\git_good.png" />
     <Content Include="img\keyboard.jpg" />
+    <Content Include="img\link.png" />
     <Content Include="img\linkedingood.png" />
+    <Content Include="img\link_650.png" />
     <Content Include="img\link_good.png" />
     <Content Include="img\man.jpg" />
     <Content Include="img\nameOfGod.jpg" />
